@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## makeCacheMatrix - accepts vector, places INVERSE into RAM, provides set and get to access
+## cacheSolve - calls makeCacheMatris and checks if INV is in ram or needs to be recalculated.
+##            - by calling get or set as needed
 
 makeCacheMatrix <- function(x = matrix()) {
   #function accepts matrix and returnss inverse
@@ -18,8 +17,6 @@ makeCacheMatrix <- function(x = matrix()) {
        getinvn = getinv)
 }
 
-
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
   #functions uses accepts the call to makeCacheMatrix and check if inverse allready in memory.
